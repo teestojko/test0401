@@ -14,6 +14,6 @@ return view('index');
 public function confirm(Request $request)
 {
 $contact = $request->only(['name', 'email', 'tel', 'content']);
-return view('confirm', compact('contact'));
+return view('confirm', ['contact' => $contact]);
 }
 }

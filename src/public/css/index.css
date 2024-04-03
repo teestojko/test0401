@@ -1,18 +1,19 @@
 .header {
-    background: #000;
+    background: #fcfafa;
 }
 
 .header__inner {
     margin: 0 auto;
     padding: 20px 15px;
-    max-width: 1230px;
+    text-align: center;
 }
 
 .header__logo {
-    color: #fff;
+    color: #867d7d;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .contact-form__content {
@@ -22,8 +23,11 @@
 }
 
 .contact-form__heading {
+    color: #867d7d;
     margin-bottom: 40px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .form {
@@ -42,13 +46,13 @@
     margin-left: 5px;
     padding: 4px 6px;
     border-radius: 3px;
-    background: #fafafa;
-    color: #aaa;
+    background: #ffffff;
+    color: #fa2222;
 }
 
 .form__error {
     height: 20px;
-    color: #ff0000;
+    color: #a52828;
     text-align: left;
 }
 
@@ -60,6 +64,12 @@
     border-radius: 3px;
 
     appearance: none;
+}
+
+.form__input--text2 input {
+    width: 285px;
+    height: 40px;
+    margin: 8px;
 }
 
 .form__input--text input {
@@ -83,4 +93,15 @@
     background: #000;
     color: #fff;
     cursor: pointer;
+}
+
+.form__gender {
+    padding-right: 420px;
+}
+
+select {
+    width: 600px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
 }

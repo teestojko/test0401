@@ -74,14 +74,19 @@
     width: 285px;
     height: 40px;
     margin: 8px;
+    background-color: #f8f6f6;
+    color: #867d7d;
 }
 
 .form__input--text input {
+    color: #8e8484;
     height: 40px;
 }
 
 .form__input--textarea textarea {
     height: 180px;
+    color: #958c8c;
+    height: 115px;
 }
 
 .form__button {
@@ -90,17 +95,18 @@
 
 .form__button-submit {
     padding: 10px;
-    width: 30%;
+    width: 20%;
     height: 50px;
     border: none;
     border-radius: 3px;
-    background: #000;
+    background: #776a6a;
     color: #fff;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .form__gender {
-    padding-right: 420px;
+    padding-right: 400px;
     font-size: large;
 }
 
@@ -109,6 +115,7 @@ select {
     height: 40px;
     padding: 5px;
     font-size: 14px;
-    color: #9f9898;
+    color: #c1b3b3;
     border: none;
+    background-color: #f8f6f6;
 }

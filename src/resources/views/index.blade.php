@@ -127,7 +127,7 @@
   </div>
   <div class="form__group-content">
     <div class="form__input--select">
-      <select name="inquiry_type" required>
+      <select name="inquiry_type" >
         <option value="">選択してください</option>
         <option value="product">製品に関するお問い合わせ</option>
         <option value="payment">支払いに関するお問い合わせ</option>

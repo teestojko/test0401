@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ asset('css/confirm.css') }}" />
 </head>
 
-<body>
+<body>1
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/">
@@ -30,8 +30,7 @@
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お名前</th>
               <td class="confirm-table__text">
-                <input type="text" name="name" value="{{ $contact['last_name'] }}" readonly />
-                <input type="text" name="name" value="{{ $contact['first_name'] }}" readonly />
+                <input type="text" name="name" value=" サンプルテキスト " />
               </td>
             </tr>
             <tr class="confirm-table__row">
@@ -43,7 +42,7 @@
             <tr class="confirm-table__row">
               <th class="confirm-table__header">電話番号</th>
               <td class="confirm-table__text">
-                <input type="tel" name="tel" value="{{ $contact['tel'] }}" readonly />
+                <input type="tel" name="tel" value="サンプルテキスト" readonly />
               </td>
             </tr>
             <tr class="confirm-table__row">

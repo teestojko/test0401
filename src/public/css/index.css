@@ -44,6 +44,9 @@
     margin-bottom: 15px;
 }
 
+.form__label--item{
+    color: #776a6a  ;
+}
 .form__label--required {
     margin-left: 5px;
     padding: 4px 6px;
@@ -71,9 +74,18 @@
 
 .form__input--text2 input {
     border: none;
-    width: 285px;
+    width: 294px;
     height: 40px;
-    margin: 8px;
+    margin: 1px;
+    background-color: #f8f6f6;
+    color: #867d7d;
+}
+
+.form__input--text3 input {
+    border: none;
+    width: 191px;
+    height: 40px;
+    margin: 1px;
     background-color: #f8f6f6;
     color: #867d7d;
 }
@@ -108,6 +120,7 @@
 .form__gender {
     padding-right: 400px;
     font-size: large;
+    color: #776a6a;
 }
 
 select {

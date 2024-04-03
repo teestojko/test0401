@@ -84,8 +84,16 @@
             </tr>
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お問い合わせの種類</th>
-              <td class="confirm-table__text">
-                <input type="text" name="inquiry_type" value="{{ $contact['inquiry_type'] }}" readonly />
+              <td class="confirm-table__txt">
+                @if($contact['inquiry_type'] == 'product')
+                製品に関するお問い合わせ
+                @elseif($contact['inquiry_type'] == 'payment')
+                支払いに関するお問い合わせ
+                @elseif($contact['inquiry_type'] == 'delivery')
+                配送に関するお問い合わせ
+                @else
+                その他
+                @endif
               </td>
             </tr>
             <tr class="confirm-table__row">

@@ -29,9 +29,13 @@
           <table class="confirm-table__inner">
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お名前</th>
-              <td class="confirm-table__text2">
+              <td class="confirm-table__text">
+                <div style="display: inline-block;">
                 <input type="text" name="name" value=" {{ $contact['last_name'] }} " readonly/>
+                </div>
+                <div style="display: inline-block;">
                 <input type="text" name="name" value=" {{ $contact['first_name'] }} " readonly/>
+                </div>
               </td>
             </tr>
             <tr class="confirm-table__row">

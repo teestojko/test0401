@@ -62,7 +62,7 @@
 .form__input--textarea textarea {
     padding: 10px;
     width: 600px;
-    border: 1px solid   #f6f3f3;
+    border: none;
     border-radius: 3px;
     background-color: #f8f6f6;
 
@@ -70,6 +70,7 @@
 }
 
 .form__input--text2 input {
+    border: none;
     width: 285px;
     height: 40px;
     margin: 8px;
@@ -100,6 +101,7 @@
 
 .form__gender {
     padding-right: 420px;
+    font-size: large;
 }
 
 select {
@@ -108,4 +110,5 @@ select {
     padding: 5px;
     font-size: 14px;
     color: #9f9898;
+    border: none;
 }

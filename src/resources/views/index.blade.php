@@ -83,9 +83,8 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text3">
-              <input type="tel" name="tel_1" placeholder="090" >-</input>
-
-              <input type="tel" name="tel_2" placeholder="1234" >-</input>
+              <input type="tel" name="tel_1" placeholder="090" >-
+              <input type="tel" name="tel_2" placeholder="1234" >-
               <input type="tel" name="tel_3" placeholder="5678" />
             </div>
             <div class="form__error">

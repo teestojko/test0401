@@ -13,7 +13,7 @@ return view('index');
 
 public function confirm(Request $request)
 {
-$contact = $request->only(['last_name','first_name', 'email', 'tel', 'content']);
+$contact = $request->only(['last_name','first_name', 'gender', 'email', 'tel_1' ,'tel_2' , 'tel_3', 'address', 'building', 'inquiry_type', 'content']);
 return view('confirm', ['contact' => $contact]);
 }
 }

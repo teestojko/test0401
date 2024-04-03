@@ -50,6 +50,7 @@
 .confirm-table__text {
     padding: 15px;
     border-bottom: 1px solid #ddd;
+    font-size: 14px;
 }
 .confirm-table__text input {
     width: 100%;

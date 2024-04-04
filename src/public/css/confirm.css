@@ -41,10 +41,12 @@
 
 .confirm-table {
     border: 1px solid #ddd;
+    height: max-content;
 }
 
 .confirm-table__inner {
     width: 100%;
+    border: #867d7d;
 }
 
 .confirm-table__header {
@@ -59,13 +61,13 @@
 .confirm-table__text {
     padding: 15px;
     border-bottom: 1px solid #ddd;
-    font-size: 14px;
+    font-size: 12px;
     color: #9d846a;
 }
 .confirm-table__text input {
     width: 70%;
     outline: none;
-    border: none;
+    border: #9d846a;
 }
 
 .confirm-table__row:last-child .confirm-table__header,
@@ -76,15 +78,33 @@
 .form__button {
     margin-top: 30px;
     text-align: center;
+    width: 40%;
+}
+
+.form__button2 {
+    margin-top: 30px;
+        text-align: center;
+        width: 40%;
+        background-color: #fff;
+        color: #000;
 }
 
 .form__button-submit {
     padding: 10px;
-    width: 30%;
+    width: 60%;
     height: 50px;
     border: none;
     border-radius: 3px;
     background: #000;
     color: #fff;
     cursor: pointer;
+}
+.form__button-submit2 {
+    background-color: #fff;
+    border: none;
+}
+
+.confirm-table__row2{
+    border: #9d846a;
+    height: 20px;
 }

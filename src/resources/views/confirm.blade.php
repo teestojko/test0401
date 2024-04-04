@@ -84,7 +84,7 @@
             </tr>
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お問い合わせの種類</th>
-              <td class="confirm-table__txt">
+              <td class="confirm-table__text">
                 @if($contact['inquiry_type'] == 'product')
                 製品に関するお問い合わせ
                 @elseif($contact['inquiry_type'] == 'payment')
@@ -96,7 +96,7 @@
                 @endif
               </td>
             </tr>
-            <tr class="confirm-table__row">
+            <tr class="confirm-table__row2">
               <th class="confirm-table__header">お問い合わせ内容</th>
               <td class="confirm-table__text">
                 <input type="text" name="content" value="{{ $contact['content'] }}" readonly />
@@ -104,8 +104,11 @@
             </tr>
           </table>
         </div>
-        <div class="form__button">
+        <div class="form__button" style="display: inline-block;">
           <button class="form__button-submit" type="submit">送信</button>
+        </div>
+        <div class="form__button2" style="display: inline-block;">
+          <button class="form__button-submit2" type="submit">修正</button>
         </div>
       </form>
     </div>

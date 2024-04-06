@@ -105,7 +105,8 @@
           <button class="form__button-submit" type="submit">送信</button>
         </div>
         <div class="form__button2" style="display: inline-block;">
-          <button class="form__button-submit2" type="submit">修正</button>
+          <button class="form__button-submit" type="button" onclick="location.href='/'">修正</button>
+          {{-- <button class="form__button-submit2" type="submit">修正</button> --}}
         </div>
       </form>
     </div>

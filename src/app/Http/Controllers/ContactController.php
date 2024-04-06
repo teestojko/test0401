@@ -13,13 +13,13 @@ return view('index');
 
 public function confirm(Request $request)
 {
-$contact = $request->only(['last_name','first_name', 'gender', 'email', 'tell', 'address', 'building', 'detail','content' ]);
+$contact = $request->only(['last_name','first_name', 'gender', 'email', 'tell','tell1','tell2','address', 'building', 'detail','content' ]);
 return view('confirm', ['contact' => $contact]);
 }
 
 public function store(Request $request)
 {
-$contact = $request->only(['last_name','first_name', 'gender', 'email', 'tell', 'address', 'building', 'detail','content' ]);
+$contact = $request->only(['last_name','first_name', 'gender', 'email', 'tell','tell1','tell2', 'address', 'building', 'detail','content' ]);
 return view('thanks');
 }
 }

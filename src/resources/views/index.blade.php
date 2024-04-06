@@ -84,8 +84,8 @@
           <div class="form__group-content">
             <div class="form__input--text3">
               <input type="tell" name="tell" placeholder="090" >-
-              <input type="tell" name="tell" placeholder="1234" >-
-              <input type="tell" name="tell" placeholder="5678" />
+              <input type="tell" name="tell1" placeholder="1234" >-
+              <input type="tell" name="tell2" placeholder="5678" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->

@@ -61,7 +61,9 @@
               <th class="confirm-table__header">電話番号</th>
               <td class="confirm-table__text">
               @if(isset($contact['tell']))
-            <input type="tel" name="tell" value="{{ $contact['tell'] }}" readonly />
+            <input type="tell" name="tell" value="{{ $contact['tell']}}" readonly />
+            <input type="tell" name="tell1" value="{{ $contact['tell1']}}" readonly />
+            <input type="tell" name="tell2" value="{{ $contact['tell2']}}" readonly />
         @endif
               </td>
             </tr>

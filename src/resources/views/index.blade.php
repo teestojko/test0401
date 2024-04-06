@@ -37,7 +37,13 @@
               <input type="text" name="first_name" placeholder="例：太郎" />
             </div>
             <div class="form__error">
-              <!--バリデーション機能を実装したら記述します。-->
+                @error('last_name')
+                {{ $message }}
+                @enderror
+                @error('first_name')
+                {{ $message }}
+                @enderror
+                <!--バリデーション機能を実装したら記述します。-->
             </div>
           </div>
         </div>
@@ -58,6 +64,9 @@
                 </label>
             </div>
             <div class="form__error">
+                @error('gender')
+                {{ $message }}
+                @enderror
               <!--バリデーション機能を実装したら記述します。-->
             </div>
           </div>
@@ -72,6 +81,9 @@
               <input type="email" name="email" placeholder="test@example.com" />
             </div>
             <div class="form__error">
+                @error('email')
+                {{ $message }}
+                @enderror
               <!--バリデーション機能を実装したら記述します。-->
             </div>
           </div>
@@ -88,6 +100,9 @@
               <input type="tell" name="tell2" placeholder="5678" />
             </div>
             <div class="form__error">
+                @error('tell')
+                {{ $message }}
+                @enderror
               <!--バリデーション機能を実装したら記述します。-->
             </div>
           </div>
@@ -102,6 +117,9 @@
       <input type="text" name="address" placeholder="例:東京都渋谷区千駄ヶ谷1-2-3">
     </div>
     <div class="form__error">
+        @error('address')
+        {{ $message }}
+        @enderror
       <!-- バリデーションエラーメッセージ -->
     </div>
   </div>
@@ -115,6 +133,9 @@
       <input type="text" name="building" placeholder="例:千駄ヶ谷マンション101" >
     </div>
     <div class="form__error">
+        @error('building')
+        {{ $message }}
+        @enderror
       <!-- バリデーションエラーメッセージ -->
     </div>
   </div>
@@ -135,6 +156,9 @@
       </select>
     </div>
     <div class="form__error">
+        @error('detail')
+        {{ $message }}
+        @enderror
       <!-- バリデーションエラーメッセージ -->
     </div>
   </div>
@@ -142,6 +166,7 @@
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">お問い合わせ内容</span>
+            <span class="form__label--required">※</span>
           </div>
           <div class="form__group-content">
             <div class="form__input--textarea">

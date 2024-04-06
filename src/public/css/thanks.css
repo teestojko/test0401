@@ -15,13 +15,21 @@
     font-size: 24px;
 }
 
-.thanks__content {
-    margin: 0 auto;
-    padding: 30px 15px;
-    max-width: 1230px;
-}
 
 .thanks__heading {
     margin-bottom: 40px;
     text-align: center;
+}
+
+.form__button-submit {
+        text-align: center;
+        padding: 10px;
+        width: 20%;
+        height: 50px;
+        border: none;
+        border-radius: 3px;
+        background: #776a6a;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
 }

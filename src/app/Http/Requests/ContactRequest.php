@@ -32,8 +32,8 @@ class ContactRequest extends FormRequest
           'tell1' => ['required', 'numeric'],
           'tell2' => ['required', 'numeric'],
           'address' => ['required'],
-          'detail' => ['required'],
-          'content' => ['required','max:120'],
+          'content' => ['required'],
+          'detail' => ['required','max:120'],
         ];
     }
          public function messages()
@@ -51,9 +51,9 @@ class ContactRequest extends FormRequest
             'tell2.required' => '電話番号を入力してください',
             'tell2.numeric' => '電話番号を数字で入力してください',
             'address.required'=> '住所を入力してください',
-            'detail.required' => 'お問い合わせの種類を入力してください',
-            'content.required' => 'お問い合わせの内容を入力してください',
-            'content.max:120' => 'お問い合わせ内容は120文字以内で入力してください',
+            'content.required' => 'お問い合わせの種類を入力してください',
+            'detail.required' => 'お問い合わせの内容を入力してください',
+            'detail.max:120' => 'お問い合わせ内容は120文字以内で入力してください',
          ];
      }
 }

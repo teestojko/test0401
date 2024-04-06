@@ -19,13 +19,10 @@ class CreateContactsTable extends Migration
             $table->string('first_name');
             $table->string('gender');
             $table->string('email');
-            $table->string('tel1');
-            $table->string('tel2');
-            $table->string('tel3');
+            $table->string('tell', 11);
             $table->string('address');
             $table->string('building');
-            $table->string('inquiry_type');
-            $table->text('content')->nullable();
+            $table->string('detail');
             $table->timestamps();
         });
     }

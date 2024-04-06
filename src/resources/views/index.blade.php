@@ -83,9 +83,9 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text3">
-              <input type="tel" name="tel_1" placeholder="090" >-
-              <input type="tel" name="tel_2" placeholder="1234" >-
-              <input type="tel" name="tel_3" placeholder="5678" />
+              <input type="tell" name="tell" placeholder="090" >-
+              <input type="tell" name="tell" placeholder="1234" >-
+              <input type="tell" name="tell" placeholder="5678" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -126,7 +126,7 @@
   </div>
   <div class="form__group-content">
     <div class="form__input--select">
-      <select name="inquiry_type" >
+      <select name="detail" >
         <option value="">選択してください</option>
         <option value="product">製品に関するお問い合わせ</option>
         <option value="payment">支払いに関するお問い合わせ</option>

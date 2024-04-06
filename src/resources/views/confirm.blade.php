@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ asset('css/confirm.css') }}" />
 </head>
 
-<body>1
+<body>
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/confirm">
@@ -24,7 +24,8 @@
       <div class="confirm__heading">
         <h2>confirm</h2>
       </div>
-      <form class="form">
+        <form class="form" action="/contacts" method="post">
+        @csrf
         <div class="confirm-table">
           <table class="confirm-table__inner">
             <tr class="confirm-table__row">
@@ -59,15 +60,9 @@
             <tr class="confirm-table__row">
               <th class="confirm-table__header">電話番号</th>
               <td class="confirm-table__text">
-                <div style="display: inline-block;">
-                <input type="tel" name="tel1" value=" {{$contact['tel_1']}} " readonly />
-                </div>
-                <div style="display: inline-block;">
-                <input type="tel" name="tel2" value=" {{$contact['tel_2']}} " readonly />
-                </div>
-                <div style="display: inline-block;">
-                <input type="tel" name="tel3" value=" {{$contact['tel_3']}} " readonly />
-                </div>
+              @if(isset($contact['tell']))
+            <input type="tel" name="tell" value="{{ $contact['tell'] }}" readonly />
+        @endif
               </td>
             </tr>
             <tr class="confirm-table__row">
@@ -85,11 +80,11 @@
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お問い合わせの種類</th>
               <td class="confirm-table__text">
-                @if($contact['inquiry_type'] == 'product')
+                @if($contact['detail'] == 'product')
                 製品に関するお問い合わせ
-                @elseif($contact['inquiry_type'] == 'payment')
+                @elseif($contact['detail'] == 'payment')
                 支払いに関するお問い合わせ
-                @elseif($contact['inquiry_type'] == 'delivery')
+                @elseif($contact['detail'] == 'delivery')
                 配送に関するお問い合わせ
                 @else
                 その他

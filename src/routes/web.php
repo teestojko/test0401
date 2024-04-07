@@ -17,3 +17,4 @@ Route::get('/', [ContactController::class, 'index']);
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/contacts', [ContactController::class, 'store']);
 Route::get('/', [ContactController::class, 'thanks']);
+Route::get('/admin', [ContactController::class, 'admin']);

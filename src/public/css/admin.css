@@ -1,0 +1,135 @@
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #000;
+    border-color: #e5e2e2;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.header__logo {
+    color: #867d7d;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    color: #867d7d;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form__label--item {
+    color: #776a6a;
+}
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    background: #fcf9f9;
+    color: #fa2222;
+}
+
+.form__error {
+    height: 20px;
+    color: #a52828;
+    text-align: left;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f8f6f6;
+
+    appearance: none;
+}
+
+.form__input--text2 input {
+    border: none;
+    width: 294px;
+    height: 40px;
+    margin: 1px;
+    background-color: #f8f6f6;
+    color: #867d7d;
+}
+
+.form__input--text3 input {
+    border: none;
+    width: 191px;
+    height: 40px;
+    margin: 1px;
+    background-color: #f8f6f6;
+    color: #867d7d;
+}
+
+.form__input--text input {
+    color: #8e8484;
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+    color: #958c8c;
+    height: 115px;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #776a6a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.form__gender {
+    padding-right: 400px;
+    font-size: large;
+    color: #776a6a;
+}
+
+select {
+    width: 600px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    color: #c1b3b3;
+    border: none;
+    background-color: #f8f6f6;
+}

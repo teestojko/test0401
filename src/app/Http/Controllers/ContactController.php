@@ -11,6 +11,19 @@ public function index()
 {
 return view('index');
 }
+public function admin()
+{
+return view('admin');
+}
+public function login()
+{
+return view('login');
+}
+public function register()
+{
+return view('register');
+}
+
 // public function confirm(ContactRequest $request)
 public function confirm(Request $request)
 {

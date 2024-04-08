@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+// これの後にrules()を記述する
 class ContactRequest extends FormRequest
 {
     /**
@@ -11,8 +12,17 @@ class ContactRequest extends FormRequest
      *
      * @return bool
      */
+    /**
+ * このメソッドは、リクエストが特定のアクションやリソースに対して許可されているかどうかを決定します。
+ * このメソッドが true を返す場合、リクエストは許可され、指定されたアクションやリソースにアクセスできます。
+ * このメソッドが false を返す場合、リクエストは拒否され、指定されたアクションやリソースにアクセスできません。
+ * この場合、アプリケーションの他の部分で処理される可能性があります。
+ */
     public function authorize()
     {
+     // この例では、常に true を返しています。
+    // これは、すべてのリクエストを許可していることを意味します。
+    // 実際のアプリケーションでは、必要に応じて条件を追加し、リクエストを適切に許可または拒否するロジックを実装します。
         return true;
     }
 

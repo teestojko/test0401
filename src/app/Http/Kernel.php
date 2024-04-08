@@ -3,7 +3,7 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-
+// カーネルはコアな部分で、自分であまり変更しない
 class Kernel extends HttpKernel
 {
     /**

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 // use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 
+// ここのコントローラで実行するという意味
 class ContactController extends Controller
 {
 public function index()
@@ -37,6 +38,7 @@ public function store(Request $request)
 $contact = $request->only(['last_name','first_name', 'gender', 'email', 'tell','tell1','tell2', 'address', 'building', 'detail','content' ]);
 return view('thanks');
 }
+
 public function thanks()
 {
     return view('index');
